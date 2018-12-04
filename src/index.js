@@ -9,9 +9,9 @@ class SelectUSState extends React.Component {
   };
 
   render() {
-    const { id, className } = this.props;
+    const { id, className, value } = this.props;
     return (
-      <select id={id} className={className} onChange={this.handleChange}>
+      <select id={id} className={className} onChange={this.handleChange} value={value}>
         {states.map(item => (
           <option key={item.abbreviation} value={item.abbreviation}>
             {item.name}
